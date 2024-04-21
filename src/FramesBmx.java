@@ -1,14 +1,14 @@
 public class FramesBmx implements Cloneable {
-
-    int medidaRin;
-    float medidaTuboSup;
-    int peso;
+    double id;
+    int sizeWheel;
+    float sizeTubeSup;
+    String weightFrame;
     String color;
-    String tipoCaja;
+    String typeBox;
     String material;
 
-
-
-
-
+    public FramesBmx(){}
+    public FramesBmx clonar() throws CloneNotSupportedException {
+        return(FramesBmx)this.clone();
+    }
 }
