@@ -6,6 +6,8 @@ public class FrameDesign {
     String color;
     String boxType;
     String material;
+    int numClones;
+
     Scanner scanner = new Scanner(System.in);
 
     //Interfaz Welcome
@@ -75,5 +77,13 @@ public class FrameDesign {
             System.out.println("Ingrese el material deseado para la construcción del frame por favor, ej: Aluminio, Cromoly 4130, Carbono, Titanio: ");
             material = scanner.next();
             return material;
+        }
+
+        // 7. Set Num Clones for make
+
+        public int GetNumClones() {
+            System.out.println("Ingresa la cantidad de veces que quieres clonar este objeto antes de proceder a crearlos");
+            numClones = scanner.nextInt();
+            return numClones;
         }
 }
