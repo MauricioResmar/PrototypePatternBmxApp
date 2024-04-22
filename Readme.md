@@ -27,4 +27,14 @@ try {
 
 En este ejemplo clonamos un objeto previamente definido, pero ahora le modificamos únicamente su id
 consecutivamente. Así hemos desarrollado mediante un nuevo tipo de Patrón de diseño creacional, la 
-capacidad de crear nuevos objetos, clonados a partir de un objeto especifico o varios objetos. FramesBmx.java 
+capacidad de crear nuevos objetos, clonados a partir de un objeto especifico o varios objetos. FramesBmx.java
+
+Resultados por Consola:
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
+
+![img_4.png](img_4.png)
