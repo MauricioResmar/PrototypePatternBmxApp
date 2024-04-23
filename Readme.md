@@ -6,6 +6,7 @@ y el Patrón de diseño creacional Prototype quien hace uso de la interfaz Clone
 el prototypo especifico cuantas veces se requiera.
 
 ![img.png](img.png)
+![img_1.png](img_1.png)
 
 Cómo bien se observa, contamos con nuestro programa principal llamado Main, una Clase adicional 
 llamada FrameDesign, desde la cual se capturan los datos a través de métodos de entrada (Scanner) 

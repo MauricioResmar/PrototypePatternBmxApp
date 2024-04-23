@@ -1,6 +1,5 @@
 @startuml
 class FramesBmx {
-~ double id
 ~ int sizeWheel
 ~ float sizeTubeSup
 ~ String weightFrame
@@ -23,6 +22,7 @@ class FrameDesign {
 ~ String color
 ~ String boxType
 ~ String material
+~ int numClones
 ~ Scanner scanner
 + void PrintWelcome()
 + int GetWheelSize()
@@ -31,8 +31,30 @@ class FrameDesign {
 + String GetColorFrame()
 + String GetBoxType()
 + String GetFrameMaterial()
++ int GetNumClones()
 }
 
+note left of FrameDesign::PrintWelcome()
+Interfaz Welcome
+end note
+note right of FrameDesign::GetWheelSize()
+ 1. Set Wheel Size:
+end note
+note left of FrameDesign::GetTubeSupSize()
+ 2 . Set Size Superior Tube:
+end note
+note right of FrameDesign::GetWeightFrame()
+ 3. Set Weight frame:
+end note
+note left of FrameDesign::GetColorFrame()
+ 4. Set Color frame:
+end note
+note right of FrameDesign::GetBoxType()
+ 5. Set TypeBox frame:
+end note
+note left of FrameDesign::GetFrameMaterial()
+ 6. Set Material Frame:
+end note
 
 
 
