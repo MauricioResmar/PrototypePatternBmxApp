@@ -3,8 +3,8 @@ public class Main {
 
         FramesBmx framesBmx = new FramesBmx();
         FrameDesign frameDesign = new FrameDesign();
+        int id = 1;
 
-        framesBmx.id = Math.random();
         framesBmx.sizeWheel = frameDesign.GetWheelSize();
         framesBmx.sizeTubeSup = frameDesign.GetTubeSupSize();
         framesBmx.weightFrame = frameDesign.GetWeightFrame();
@@ -18,8 +18,8 @@ public class Main {
     System.out.println("\n Se ha generado con exito el prototypo original para el Frame con las siguientes caracteristicas:");
 
         System.out.println("\n****Id Object Frame Mem Ram:" + framesBmx);
-        System.out.println("\n****Id Frame:" + framesBmx.id);
-        System.out.println("\n****Size Wheel:" + framesBmx.sizeWheel);
+        System.out.println("\n****Id Frame:" + id);
+        System.out.println("****Size Wheel:" + framesBmx.sizeWheel);
         System.out.println("****Size Superior Tube:" + framesBmx.sizeTubeSup);
         System.out.println("****Weight Frame:" + framesBmx.weightFrame);
         System.out.println("****Color Frame:" + framesBmx.color);
@@ -30,8 +30,8 @@ public class Main {
         do {
             try {
                 FramesBmx clonado = framesBmx.clonar();
-                clonado.id = clonado.id + 1;
-                System.out.println("\nid Clone: " + clonado.id + "\nId Memoria Ram Object: " + clonado + "\nClone Size Frame clone: " + clonado.sizeWheel + "\nSize Superior tube: " + clonado.sizeTubeSup + "\nWeight Frame Clone: " + clonado.weightFrame + "\nType Box Frame Clone: " + clonado.typeBox + "\nClone Frame Color: " + clonado.color + "\nMaterial Clone Frame: " + clonado.material + "\nClone number: " + numClones);
+                id = id + 1;
+                System.out.println("\nid Clone: " + id + "\nId Memoria Ram Object: " + clonado + "\nClone Size Frame clone: " + clonado.sizeWheel + "\nSize Superior tube: " + clonado.sizeTubeSup + "\nWeight Frame Clone: " + clonado.weightFrame + "\nType Box Frame Clone: " + clonado.typeBox + "\nClone Frame Color: " + clonado.color + "\nMaterial Clone Frame: " + clonado.material + "\nClone number: " + numClones);
                 numClones --;
             } catch (CloneNotSupportedException e){
                 System.out.println("El objeto no se puede Clonal: " + e.getMessage());

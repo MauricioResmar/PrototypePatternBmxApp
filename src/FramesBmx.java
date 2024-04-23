@@ -1,5 +1,4 @@
 public class FramesBmx implements Cloneable {
-    double id;
     int sizeWheel;
     float sizeTubeSup;
     String weightFrame;
